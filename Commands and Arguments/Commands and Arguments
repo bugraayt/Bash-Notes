@@ -1,0 +1,24 @@
+Bash divides each line into words that are demarcated by a whitespace character (spaces and tabs). 
+The first word of the line is the name of the command to be executed. All the remaining words become arguments to that command 
+(options, filenames, etc.). 
+
+Assume we're in an empty directory... (to try these commands, create an empty directory called test and enter that directory 
+by running: mkdir test; cd test):
+
+$ ls              # List files in the current directory (no output, no files).
+$ touch a b c     # Create files 'a', 'b', and 'c'.
+$ ls              # List files again, and this time outputs: 'a', 'b', and 'c'.
+a  b  c
+
+The command ls prints out the names of the files in the current directory. The first time we run the list command we get no output, because there are no files yet. 
+
+The # character at the start of a word indicates a comment. Any words following the comment are ignored by the shell, meant only for reading. If we run these examples in our own shell, we don't have to type the comments; but even if we do, the command will still work. 
+
+touch is an application that changes the Last Modified time of a file. If the filename that it is given does not exist yet, it creates a file of that name as a new and empty file. In this example, we passed three arguments. touch creates a file for each argument. ls shows us that three files have been created.
+
+$ rm *            # Remove all files in the current directory.
+$ ls              # List files in the current directory (no output, no files).
+$ touch a   b c   # Create files 'a', 'b' and 'c'.
+$ ls              # List files again; this time the outputs: 'a', 'b' and 'c'.
+a  b  c
+
