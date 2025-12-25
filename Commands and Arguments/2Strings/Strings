@@ -1,0 +1,8 @@
+String refers to a sequence of characters which is treated as a single unit.
+
+In Bash programming, almost everything is a string. When we type a command, the command's name is a string and each argument is a string; variable names are strings, and the contents of variables are strings as well; a filename is a string, and most files contain strings. They're everywhere!
+
+An entire command can also be considered a string. This is not normally a useful point of view, but it illustrates the fact that parts of strings can sometimes be considered strings in their own right. A string which is part of a larger string is called a substring.
+
+Strings do not have any intrinsic meaning. Their meaning is defined by how and where they are used. 
+
