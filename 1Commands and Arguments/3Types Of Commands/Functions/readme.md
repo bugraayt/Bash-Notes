@@ -1,0 +1,2 @@
+#Functions
+Functions in Bash are somewhat like aliases, but more powerful. Unlike aliases, they can be used in scripts. A function contains shell commands, and acts very much like a small script; they can even take arguments and create local variables. When a function is called, the commands in it are executed. Functions will be covered in depth later in the guide. 
